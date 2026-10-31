@@ -1,14 +1,12 @@
-package com.example.omikuji;
+package com.example.omikuji.service;
 
 import java.util.Random;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController
-public class OmikujiController {
+@Service
+public class OmikujiService {
 
-    @GetMapping("/api/omikuji")
     public String drawOmikuji() {
 
         Random random = new Random();
