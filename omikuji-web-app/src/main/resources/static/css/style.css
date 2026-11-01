@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    background-color: #f7efe4;
+    color: #2d241f;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 420px;
+    padding: 40px;
+    text-align: center;
+    background-color: #fffaf3;
+    border: 2px solid #c49a5a;
+    border-radius: 16px;
+}
+
+.torii {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #8d1717;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #b62525;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.main-button:hover {
+    background-color: #8f1e1e;
+}
+
+.omikuji-box {
+    width: 140px;
+    height: 180px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c98b4d;
+    border: 4px solid #7b4a28;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.result-box {
+    margin: 20px 0 30px;
+    padding: 30px;
+    background-color: #fff3d6;
+    border: 3px double #b78b45;
+    border-radius: 10px;
+}
+
+.result {
+    margin: 0;
+    color: #b51616;
+    font-size: 72px;
+    font-weight: bold;
+}

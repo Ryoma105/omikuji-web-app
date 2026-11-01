@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>おみくじ結果</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="card">
+
+            <div class="torii">
+                ⛩
+            </div>
+
+            <h1>
+                おみくじ結果
+            </h1>
+
+            <div class="result-box">
+
+                <p class="result" id="resultText">
+                    結果
+                </p>
+
+            </div>
+
+            <p class="message">
+                今日も良い一日になりますように
+            </p>
+
+            <a href="draw.html" class="main-button">
+                もう一度引く
+            </a>
+
+            <br><br>
+
+            <a href="index.html">
+                開始画面に戻る
+            </a>
+
+        </section>
+
+    </main>
+
+    <script>
+        // URLからおみくじ結果を取得する
+        const params = new URLSearchParams(window.location.search);
+
+        const result = params.get("result");
+
+        // 結果を画面に表示する
+        if (result) {
+            document.getElementById("resultText").textContent = result;
+        }
+    </script>
+
+</body>
+
+</html>
